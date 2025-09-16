@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You Riya - Minecraft Sunset</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: url('https://img.freepik.com/free-photo/minecraft-landscape-sunset-background_53876-154408.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .heart-sunset {
+      width: 170px;
+      height: 170px;
+      margin-top: 75px;
+      background: url('https://www.cleanpng.com/png-pixelated-heart-in-minecraft-style-pixel-art-heart-4344079/download-png.html') center/contain no-repeat;
+      animation: fadeIn 1.5s;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.8);}
+      60% { opacity: 1; transform: scale(1.1);}
+      100% { opacity: 1; transform: scale(1);}
+    }
+    .love-pop {
+      font-size: 0;
+      opacity: 0;
+      margin-top: 16px;
+      font-family: 'Press Start 2P', cursive;
+      color: #ff4343;
+      text-shadow: 3px 3px #62b05c, 2px 2px 18px #222;
+      font-weight: bold;
+      transition: font-size 0.7s, opacity 0.7s;
+      text-align: center;
+    }
+    .love-pop.show {
+      font-size: 2.1em;
+      opacity: 1;
+    }
+    .love-paragraph {
+      max-width: 650px;
+      margin-top: 60px;
+      padding: 16px;
+      background: rgba(255,255,255,0.88);
+      border-radius: 19px;
+      font-family: 'Arial', sans-serif;
+      font-size: 1.19em;
+      color: #212121;
+      box-shadow: 0 2px 18px #fff;
+      text-align: center;
+      border-top: 5px solid #ff4343;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-sunset"></div>
+  <div class="love-pop" id="lovePop">I LOVE YOU SO MUCH</div>
+  <div class="love-paragraph">
+    To Riya Walter,<br>
+    You are the prettiest girl in my world, lighting up my every moment like a Minecraft sunset. My love for you is vast, beautiful, and heartwarming, just like these blocky landscapes. Thank you for being so adorable, sweet, and caring. I love you more than anything, and my heart will always belong to you.
+  </div>
+  <script>
+    setTimeout(function() {
+      document.getElementById('lovePop').classList.add('show');
+    }, 1500);
+  </script>
+</body>
+</html>
